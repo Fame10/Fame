@@ -761,6 +761,16 @@ a:focus {
   margin: 0 auto;     /* center the video */
   object-fit: contain; /* keep aspect ratio */
   }
+  .teaser-video {
+  display: block;       /* makes margin auto work */
+  margin: 0 auto;       /* centers horizontally */
+  width: 500px;         /* set the desired size */
+  max-width: 90%;       /* responsive on smaller screens */
+  height: auto;         /* keep aspect ratio */
+  border-radius: var(--border-radius-lg); /* optional, nice look */
+  box-shadow: var(--shadow-xl);          /* optional */
+  object-fit: contain;   /* ensures it scales correctly */
+  }
 }
 
 
