@@ -747,44 +747,6 @@ a:focus {
     color: var(--text-primary) !important;
     box-shadow: none !important;
   }
-  .teaser video {
-  width: 50% !important;
-  max-width: 600px;
-  display: block;
-  margin: 0 auto;
-  }
-  .teaser .publication-banner video {
-  width: auto;        /* remove the forced 100% width */
-  height: auto;       /* remove the forced 100% height */
-  max-width: 400px;   /* desired max width */
-  display: block;
-  margin: 0 auto;     /* center the video */
-  object-fit: contain; /* keep aspect ratio */
-  }
-  .teaser-video {
-  display: block;       /* makes margin auto work */
-  margin: 0 auto;       /* centers horizontally */
-  width: 500px;         /* set the desired size */
-  max-width: 90%;       /* responsive on smaller screens */
-  height: auto;         /* keep aspect ratio */
-  border-radius: var(--border-radius-lg); /* optional, nice look */
-  box-shadow: var(--shadow-xl);          /* optional */
-  object-fit: contain;   /* ensures it scales correctly */
-  }
-  .video-wrapper {
-  width: 400px;       /* desired width */
-  max-width: 90%;     /* responsive for small screens */
-  margin: 0 auto;     /* center horizontally */
-  }
-
-  .video-wrapper video {
-  width: 100%;        /* fills wrapper */
-  height: auto;       /* keeps aspect ratio */
-  display: block;
-  border-radius: var(--border-radius-lg);
-  box-shadow: var(--shadow-xl);
-  object-fit: contain;
-  }
 }
 
 
