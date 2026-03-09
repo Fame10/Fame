@@ -771,6 +771,20 @@ a:focus {
   box-shadow: var(--shadow-xl);          /* optional */
   object-fit: contain;   /* ensures it scales correctly */
   }
+  .video-wrapper {
+  width: 400px;       /* desired width */
+  max-width: 90%;     /* responsive for small screens */
+  margin: 0 auto;     /* center horizontally */
+  }
+
+  .video-wrapper video {
+  width: 100%;        /* fills wrapper */
+  height: auto;       /* keeps aspect ratio */
+  display: block;
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-xl);
+  object-fit: contain;
+  }
 }
 
 
