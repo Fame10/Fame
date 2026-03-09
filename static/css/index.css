@@ -756,7 +756,7 @@ a:focus {
   .teaser .publication-banner video {
   width: auto;        /* remove the forced 100% width */
   height: auto;       /* remove the forced 100% height */
-  max-width: 600px;   /* desired max width */
+  max-width: 400px;   /* desired max width */
   display: block;
   margin: 0 auto;     /* center the video */
   object-fit: contain; /* keep aspect ratio */
