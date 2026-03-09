@@ -747,6 +747,12 @@ a:focus {
     color: var(--text-primary) !important;
     box-shadow: none !important;
   }
+  .teaser video {
+  width: 50% !important;
+  max-width: 600px;
+  display: block;
+  margin: 0 auto;
+  }
 }
 
 
