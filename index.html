@@ -365,22 +365,28 @@ of a Full-Scale Humanoid - AUTHOR_NAMES | Academic Research</title>
         <div class="content has-text-justified">
           <!-- TODO: Replace with your paper abstract -->
           <p>
-            Maintaining balance under external hand forces
-            is critical for humanoid bi-manual manipulation. Such forces
-            propagate through the kinematic chain and constrain the
+            Maintaining balance under external hand forces is
+            critical for humanoid bimanual manipulation, where interaction
+            forces propagate through the kinematic chain and constrain the
             feasible manipulation envelope. We propose FAME, a force-
             adaptive reinforcement learning framework that conditions a
-            standing policy on a learned latent representation of upper-
-            body joint states and hand interaction forces. During training,
-            external hand forces on the wrist and arm motion disturbances
-            are sampled in simulation to expose the policy to diverse load
-            conditions with upper-body pose curriculum. At deployment,
-            interaction forces are estimated via forward dynamics and
-            provided to the same encoder for online adaptation without
-            the need of direct force sensing. Experiments on a full-scale
-            humanoid demonstrate that the proposed method significantly
-            increases the admissible hand-force range while maintaining
-            stable standing, compared to non-adaptive baselines.
+            standing policy on a learned latent context encoding upper-body
+            joint configuration and bimanual interaction forces. During
+            training, we apply diverse, spherically sampled 3D forces
+            on each hand to inject disturbances in simulation together
+            with an upper-body pose curriculum, exposing the policy to
+            manipulation-induced perturbations across continuously vary-
+            ing arm configurations. At deployment, interaction forces are
+            estimated from the robot dynamics and fed to the same
+            encoder, enabling online adaptation without wrist force/torque
+            sensors. In simulation across five fixed arm configurations
+            with randomized hand forces and commanded base heights,
+            FAME improves mean standing success to 73.84%, compared
+            to 51.40% for the curriculum-only baseline and 29.44% for
+            the base policy. We further deploy the learned policy on a
+            full-scale Unitree H12 humanoid and evaluate robustness in
+            representative load-interaction scenarios, including asymmetric
+            single-arm load and symmetric bimanual load. 
           </p>
         </div>
       </div>
